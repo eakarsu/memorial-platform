@@ -1,0 +1,9 @@
+{
+  "app": "memorial-platform",
+  "features": 109,
+  "sourceApps": 4,
+  "calculatorEngines": 0,
+  "registryHash": "f8a4c7b78dce29600f31f231b282ec821f3c5bb3def8c20dfd87ae606def707f",
+  "builtAt": "2026-09-07T22:06:03.444Z",
+  "status": "built"
+}

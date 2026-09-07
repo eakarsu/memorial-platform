@@ -1,0 +1,170 @@
+[
+  {
+    "id": "ai-documents",
+    "title": "Writing, documents & knowledge",
+    "group": "AI assistants",
+    "path": "/assistants/ai-documents",
+    "featureIds": [
+      "notes",
+      "documents",
+      "templates",
+      "consular-document-extraction",
+      "document-translation-draft",
+      "receiving-director-handoff-draft",
+      "operations-handoff-draft",
+      "smsemail-send-infrastructure-notifica"
+    ],
+    "ai": true,
+    "representativeId": "notes",
+    "description": "One assistant for 8 related capabilities. Choose the work you need and combine your questions.",
+    "capabilities": [
+      {
+        "id": "notes",
+        "title": "Notes",
+        "originalPath": "/features/notes"
+      },
+      {
+        "id": "documents",
+        "title": "Documents",
+        "originalPath": "/features/documents"
+      },
+      {
+        "id": "templates",
+        "title": "Templates",
+        "originalPath": "/features/templates"
+      },
+      {
+        "id": "consular-document-extraction",
+        "title": "Consular document extraction",
+        "originalPath": "/features/consular-document-extraction"
+      },
+      {
+        "id": "document-translation-draft",
+        "title": "Document translation draft",
+        "originalPath": "/features/document-translation-draft"
+      },
+      {
+        "id": "receiving-director-handoff-draft",
+        "title": "Receiving director handoff draft",
+        "originalPath": "/features/receiving-director-handoff-draft"
+      },
+      {
+        "id": "operations-handoff-draft",
+        "title": "Operations handoff draft",
+        "originalPath": "/features/operations-handoff-draft"
+      },
+      {
+        "id": "smsemail-send-infrastructure-notifica",
+        "title": "smsemail send infrastructure notifica",
+        "originalPath": "/features/smsemail-send-infrastructure-notifica"
+      }
+    ]
+  },
+  {
+    "id": "ai-insights",
+    "title": "Insights & recommendations",
+    "group": "AI assistants",
+    "path": "/assistants/ai-insights",
+    "featureIds": [
+      "destination-packet-gap-analysis"
+    ],
+    "ai": true,
+    "representativeId": "destination-packet-gap-analysis",
+    "description": "One assistant for 1 related capabilities. Choose the work you need and combine your questions.",
+    "capabilities": [
+      {
+        "id": "destination-packet-gap-analysis",
+        "title": "Destination packet gap analysis",
+        "originalPath": "/features/destination-packet-gap-analysis"
+      }
+    ]
+  },
+  {
+    "id": "ai-planning",
+    "title": "Planning & scheduling",
+    "group": "AI assistants",
+    "path": "/assistants/ai-planning",
+    "featureIds": [
+      "cargo-booking-consistency-review"
+    ],
+    "ai": true,
+    "representativeId": "cargo-booking-consistency-review",
+    "description": "One assistant for 1 related capabilities. Choose the work you need and combine your questions.",
+    "capabilities": [
+      {
+        "id": "cargo-booking-consistency-review",
+        "title": "Cargo booking consistency review",
+        "originalPath": "/features/cargo-booking-consistency-review"
+      }
+    ]
+  },
+  {
+    "id": "ai-general",
+    "title": "General assistance",
+    "group": "AI assistants",
+    "path": "/assistants/ai-general",
+    "featureIds": [
+      "family-coordination-update",
+      "grounds-maintenance",
+      "probate-assistant-adding-state-specific"
+    ],
+    "ai": true,
+    "representativeId": "family-coordination-update",
+    "description": "One assistant for 3 related capabilities. Choose the work you need and combine your questions.",
+    "capabilities": [
+      {
+        "id": "family-coordination-update",
+        "title": "Family coordination update",
+        "originalPath": "/features/family-coordination-update"
+      },
+      {
+        "id": "grounds-maintenance",
+        "title": "Grounds Maintenance",
+        "originalPath": "/features/grounds-maintenance"
+      },
+      {
+        "id": "probate-assistant-adding-state-specific",
+        "title": "probate assistant adding state specific",
+        "originalPath": "/features/probate-assistant-adding-state-specific"
+      }
+    ]
+  },
+  {
+    "id": "ai-quality",
+    "title": "Risk, quality & compliance",
+    "group": "AI assistants",
+    "path": "/assistants/ai-quality",
+    "featureIds": [
+      "evidence-completeness-review"
+    ],
+    "ai": true,
+    "representativeId": "evidence-completeness-review",
+    "description": "One assistant for 1 related capabilities. Choose the work you need and combine your questions.",
+    "capabilities": [
+      {
+        "id": "evidence-completeness-review",
+        "title": "Evidence completeness review",
+        "originalPath": "/features/evidence-completeness-review"
+      }
+    ]
+  },
+  {
+    "id": "ai-creative",
+    "title": "Creative & design",
+    "group": "AI assistants",
+    "path": "/assistants/ai-creative",
+    "featureIds": [
+      "history"
+    ],
+    "ai": true,
+    "representativeId": "history",
+    "description": "One assistant for 1 related capabilities. Choose the work you need and combine your questions.",
+    "capabilities": [
+      {
+        "id": "history",
+        "title": "History",
+        "originalPath": "/features/history"
+      }
+    ]
+  }
+]

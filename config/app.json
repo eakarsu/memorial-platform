@@ -1,0 +1,23 @@
+{
+  "id": "memorial-platform",
+  "title": "Funeral, cemetery & memorial operations",
+  "buyer": "Funeral and cemetery operators",
+  "sourceCount": 4,
+  "sources": [
+    "ai-international-funeral-repatriation-coordinator",
+    "AICemeteryMemorialParkManager",
+    "AIFuneralHomeOperationsManager",
+    "AIFuneralMemorialCreator"
+  ],
+  "status": "proposed build; not implemented",
+  "canonicalFeatureStatus": "Requires feature-level mapping and workflow migration; source route counts are not feature-completion counts.",
+  "port": 46047,
+  "productName": "Funeral, cemetery Workspace",
+  "runtimeVersion": "1.0.0",
+  "sourceRoots": [
+    "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator",
+    "/Volumes/external/projects/AICemeteryMemorialParkManager",
+    "/Volumes/external/projects/AIFuneralHomeOperationsManager",
+    "/Volumes/external/projects/AIFuneralMemorialCreator"
+  ]
+}

@@ -1,0 +1,5329 @@
+[
+  {
+    "id": "clients",
+    "title": "Clients & customers",
+    "group": "Workspace",
+    "description": "Organize clients & customers and track progress.",
+    "fields": [
+      {
+        "name": "full_name",
+        "label": "Full name",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "text"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "text"
+      },
+      {
+        "name": "organization",
+        "label": "Organization",
+        "type": "text"
+      },
+      {
+        "name": "address",
+        "label": "Address",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/clients",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "matters",
+    "title": "Work items & projects",
+    "group": "Workspace",
+    "description": "Organize work items & projects and track progress.",
+    "fields": [
+      {
+        "name": "reference",
+        "label": "Reference",
+        "type": "text"
+      },
+      {
+        "name": "jurisdiction",
+        "label": "Jurisdiction",
+        "type": "text"
+      },
+      {
+        "name": "due_date",
+        "label": "Due date",
+        "type": "date"
+      },
+      {
+        "name": "owner",
+        "label": "Owner",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/cases",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Case Management"
+      }
+    ],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/matters",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "contacts",
+    "title": "Contacts & parties",
+    "group": "Workspace",
+    "description": "Organize contacts & parties and track progress.",
+    "fields": [
+      {
+        "name": "full_name",
+        "label": "Full name",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "text"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "text"
+      },
+      {
+        "name": "organization",
+        "label": "Organization",
+        "type": "text"
+      },
+      {
+        "name": "relationship",
+        "label": "Relationship",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/contacts",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Contact Management"
+      }
+    ],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/contacts",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "tasks",
+    "title": "Tasks",
+    "group": "Workspace",
+    "description": "Organize tasks and track progress.",
+    "fields": [
+      {
+        "name": "assignee",
+        "label": "Assignee",
+        "type": "text"
+      },
+      {
+        "name": "due_date",
+        "label": "Due date",
+        "type": "date"
+      },
+      {
+        "name": "priority",
+        "label": "Priority",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/tasks",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "calendar",
+    "title": "Calendar",
+    "group": "Workspace",
+    "description": "Organize calendar and track progress.",
+    "fields": [
+      {
+        "name": "event_date",
+        "label": "Event date",
+        "type": "date"
+      },
+      {
+        "name": "location",
+        "label": "Location",
+        "type": "text"
+      },
+      {
+        "name": "attendees",
+        "label": "Attendees",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/calendar",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "deadlines",
+    "title": "Deadlines & reminders",
+    "group": "Workspace",
+    "description": "Organize deadlines & reminders and track progress.",
+    "fields": [
+      {
+        "name": "due_date",
+        "label": "Due date",
+        "type": "date"
+      },
+      {
+        "name": "owner",
+        "label": "Owner",
+        "type": "text"
+      },
+      {
+        "name": "requirements",
+        "label": "Requirements",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/deadlines",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "notes",
+    "title": "Notes",
+    "group": "Workspace",
+    "description": "Organize notes and track progress.",
+    "fields": [
+      {
+        "name": "content",
+        "label": "Content",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/notes",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "documents",
+    "title": "Documents",
+    "group": "Workspace",
+    "description": "Organize documents and track progress.",
+    "fields": [
+      {
+        "name": "document_type",
+        "label": "Document type",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "label": "Content",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/documents",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Document Management"
+      }
+    ],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/documents",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "templates",
+    "title": "Templates",
+    "group": "Workspace",
+    "description": "Organize templates and track progress.",
+    "fields": [
+      {
+        "name": "document_type",
+        "label": "Document type",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "label": "Content",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/templates",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "billing",
+    "title": "Invoices & billing",
+    "group": "Workspace",
+    "description": "Organize invoices & billing and track progress.",
+    "fields": [
+      {
+        "name": "invoice_number",
+        "label": "Invoice number",
+        "type": "text"
+      },
+      {
+        "name": "amount",
+        "label": "Amount",
+        "type": "number"
+      },
+      {
+        "name": "due_date",
+        "label": "Due date",
+        "type": "date"
+      },
+      {
+        "name": "payment_status",
+        "label": "Payment status",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/billing",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "time",
+    "title": "Time tracking",
+    "group": "Workspace",
+    "description": "Organize time tracking and track progress.",
+    "fields": [
+      {
+        "name": "work_date",
+        "label": "Work date",
+        "type": "date"
+      },
+      {
+        "name": "hours",
+        "label": "Hours",
+        "type": "number"
+      },
+      {
+        "name": "rate",
+        "label": "Rate",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/time",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "messages",
+    "title": "Messages & communications",
+    "group": "Workspace",
+    "description": "Organize messages & communications and track progress.",
+    "fields": [
+      {
+        "name": "recipient",
+        "label": "Recipient",
+        "type": "text"
+      },
+      {
+        "name": "subject",
+        "label": "Subject",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "label": "Content",
+        "type": "textarea"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/communications",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Communications"
+      }
+    ],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/messages",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "reports",
+    "title": "Reports & analytics",
+    "group": "Workspace",
+    "description": "Organize reports & analytics and track progress.",
+    "fields": [],
+    "ai": false,
+    "mode": "report",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/reports",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "audit",
+    "title": "Activity & audit trail",
+    "group": "Workspace",
+    "description": "Organize activity & audit trail and track progress.",
+    "fields": [],
+    "ai": false,
+    "mode": "audit",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/audit",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "connections",
+    "title": "Provider connections",
+    "group": "Workspace",
+    "description": "Prepare provider connections requests and track review. Provider execution is not connected.",
+    "fields": [
+      {
+        "name": "provider_name",
+        "label": "Provider name",
+        "type": "text"
+      },
+      {
+        "name": "endpoint_url",
+        "label": "Endpoint url",
+        "type": "text"
+      },
+      {
+        "name": "purpose",
+        "label": "Purpose",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "integration",
+    "sources": [],
+    "owner": "workspace",
+    "alternatives": [],
+    "path": "/features/connections",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "repatriation-case",
+    "title": "Repatriation Case",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize repatriation case and prepare the next review.",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text"
+      },
+      {
+        "name": "caseNumber",
+        "label": "Case number",
+        "type": "text"
+      },
+      {
+        "name": "familyReference",
+        "label": "Family reference",
+        "type": "text"
+      },
+      {
+        "name": "origin",
+        "label": "Origin",
+        "type": "text"
+      },
+      {
+        "name": "destination",
+        "label": "Destination",
+        "type": "text"
+      },
+      {
+        "name": "coordinator",
+        "label": "Coordinator",
+        "type": "text"
+      },
+      {
+        "name": "openedAt",
+        "label": "Opened at",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "RepatriationCase",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Repatriation Case"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/repatriation-case",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "deceased-record",
+    "title": "Deceased Record",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize deceased record and prepare the next review.",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text"
+      },
+      {
+        "name": "identityReference",
+        "label": "Identity reference",
+        "type": "text"
+      },
+      {
+        "name": "dateOfDeath",
+        "label": "Date of death",
+        "type": "date"
+      },
+      {
+        "name": "placeOfDeath",
+        "label": "Place of death",
+        "type": "text"
+      },
+      {
+        "name": "nationality",
+        "label": "Nationality",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "DeceasedRecord",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Deceased Record"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/deceased-record",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "consular-document",
+    "title": "Consular Document",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize consular document and prepare the next review.",
+    "fields": [
+      {
+        "name": "documentType",
+        "label": "Document type",
+        "type": "text"
+      },
+      {
+        "name": "issuedAt",
+        "label": "Issued at",
+        "type": "date"
+      },
+      {
+        "name": "expiresAt",
+        "label": "Expires at",
+        "type": "date"
+      },
+      {
+        "name": "authority",
+        "label": "Authority",
+        "type": "text"
+      },
+      {
+        "name": "sourceReference",
+        "label": "Source reference",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "ConsularDocument",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Consular Document"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/consular-document",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "destination-requirement",
+    "title": "Destination Requirement",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize destination requirement and prepare the next review.",
+    "fields": [
+      {
+        "name": "jurisdiction",
+        "label": "Jurisdiction",
+        "type": "text"
+      },
+      {
+        "name": "version",
+        "label": "Version",
+        "type": "text"
+      },
+      {
+        "name": "effectiveAt",
+        "label": "Effective at",
+        "type": "date"
+      },
+      {
+        "name": "requirementText",
+        "label": "Requirement text",
+        "type": "textarea"
+      },
+      {
+        "name": "sourceUrl",
+        "label": "Source url",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "DestinationRequirement",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Destination Requirement"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/destination-requirement",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "funeral-provider",
+    "title": "Funeral Provider",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize funeral provider and prepare the next review.",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text"
+      },
+      {
+        "name": "country",
+        "label": "Country",
+        "type": "text"
+      },
+      {
+        "name": "director",
+        "label": "Director",
+        "type": "text"
+      },
+      {
+        "name": "contact",
+        "label": "Contact",
+        "type": "text"
+      },
+      {
+        "name": "licenseReference",
+        "label": "License reference",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "FuneralProvider",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Funeral Provider"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/funeral-provider",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "preparation-record",
+    "title": "Preparation Record",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize preparation record and prepare the next review.",
+    "fields": [
+      {
+        "name": "preparedAt",
+        "label": "Prepared at",
+        "type": "date"
+      },
+      {
+        "name": "preparer",
+        "label": "Preparer",
+        "type": "text"
+      },
+      {
+        "name": "method",
+        "label": "Method",
+        "type": "text"
+      },
+      {
+        "name": "certificateReference",
+        "label": "Certificate reference",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "PreparationRecord",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Preparation Record"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/preparation-record",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "cargo-booking",
+    "title": "Cargo Booking",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize cargo booking and prepare the next review.",
+    "fields": [
+      {
+        "name": "airline",
+        "label": "Rline",
+        "type": "text"
+      },
+      {
+        "name": "airwayBill",
+        "label": "Rway bill",
+        "type": "text"
+      },
+      {
+        "name": "origin",
+        "label": "Origin",
+        "type": "text"
+      },
+      {
+        "name": "destination",
+        "label": "Destination",
+        "type": "text"
+      },
+      {
+        "name": "departureAt",
+        "label": "Departure at",
+        "type": "date"
+      },
+      {
+        "name": "arrivalAt",
+        "label": "Arrival at",
+        "type": "date"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "CargoBooking",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Cargo Booking"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/cargo-booking",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "repatriation-handoff",
+    "title": "Repatriation Handoff",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize repatriation handoff and prepare the next review.",
+    "fields": [
+      {
+        "name": "handedAt",
+        "label": "Handed at",
+        "type": "date"
+      },
+      {
+        "name": "sender",
+        "label": "Sender",
+        "type": "text"
+      },
+      {
+        "name": "receiver",
+        "label": "Receiver",
+        "type": "text"
+      },
+      {
+        "name": "location",
+        "label": "Location",
+        "type": "text"
+      },
+      {
+        "name": "sealReference",
+        "label": "Seal reference",
+        "type": "text"
+      },
+      {
+        "name": "receipt",
+        "label": "Receipt",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "RepatriationHandoff",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Repatriation Handoff"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/repatriation-handoff",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "case-expense",
+    "title": "Case Expense",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize case expense and prepare the next review.",
+    "fields": [
+      {
+        "name": "supplier",
+        "label": "Supplier",
+        "type": "text"
+      },
+      {
+        "name": "category",
+        "label": "Category",
+        "type": "text"
+      },
+      {
+        "name": "amountCents",
+        "label": "Amount cents",
+        "type": "number"
+      },
+      {
+        "name": "currency",
+        "label": "Currency",
+        "type": "text"
+      },
+      {
+        "name": "incurredAt",
+        "label": "Incurred at",
+        "type": "date"
+      },
+      {
+        "name": "receipt",
+        "label": "Receipt",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "CaseExpense",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Case Expense"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/case-expense",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "operational-task",
+    "title": "Operational Task",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize operational task and prepare the next review.",
+    "fields": [
+      {
+        "name": "owner",
+        "label": "Owner",
+        "type": "text"
+      },
+      {
+        "name": "priority",
+        "label": "Priority",
+        "type": "text"
+      },
+      {
+        "name": "startAt",
+        "label": "Start at",
+        "type": "date"
+      },
+      {
+        "name": "dueAt",
+        "label": "Due at",
+        "type": "date"
+      },
+      {
+        "name": "done",
+        "label": "Done",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "OperationalTask",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Operational Task"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/operational-task",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "rule-version",
+    "title": "Rule Version",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize rule version and prepare the next review.",
+    "fields": [
+      {
+        "name": "jurisdiction",
+        "label": "Jurisdiction",
+        "type": "text"
+      },
+      {
+        "name": "version",
+        "label": "Version",
+        "type": "text"
+      },
+      {
+        "name": "effectiveAt",
+        "label": "Effective at",
+        "type": "date"
+      },
+      {
+        "name": "expiresAt",
+        "label": "Expires at",
+        "type": "date"
+      },
+      {
+        "name": "sourceUrl",
+        "label": "Source url",
+        "type": "text"
+      },
+      {
+        "name": "requirementText",
+        "label": "Requirement text",
+        "type": "textarea"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "RuleVersion",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Rule Version"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/rule-version",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "document-requirement",
+    "title": "Document Requirement",
+    "group": "International funeral repatriation coordinator",
+    "description": "Organize document requirement and prepare the next review.",
+    "fields": [
+      {
+        "name": "category",
+        "label": "Category",
+        "type": "text"
+      },
+      {
+        "name": "requiredBy",
+        "label": "Required by",
+        "type": "date"
+      },
+      {
+        "name": "sourceReference",
+        "label": "Source reference",
+        "type": "text"
+      },
+      {
+        "name": "evidenceReference",
+        "label": "Evidence reference",
+        "type": "textarea"
+      },
+      {
+        "name": "reviewNotes",
+        "label": "Review notes",
+        "type": "text"
+      },
+      {
+        "name": "repatriationCaseId",
+        "label": "Repatriation case id",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "DocumentRequirement",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Document Requirement"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/document-requirement",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "consular-document-extraction",
+    "title": "Consular document extraction",
+    "group": "International funeral repatriation coordinator",
+    "description": "Consular document extraction using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "consular-document-extraction",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Consular document extraction"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/consular-document-extraction",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "destination-packet-gap-analysis",
+    "title": "Destination packet gap analysis",
+    "group": "International funeral repatriation coordinator",
+    "description": "Destination packet gap analysis using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "destination-packet-gap-analysis",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Destination packet gap analysis"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/destination-packet-gap-analysis",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "document-translation-draft",
+    "title": "Document translation draft",
+    "group": "International funeral repatriation coordinator",
+    "description": "Document translation draft using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "document-translation-draft",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Document translation draft"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/document-translation-draft",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "cargo-booking-consistency-review",
+    "title": "Cargo booking consistency review",
+    "group": "International funeral repatriation coordinator",
+    "description": "Cargo booking consistency review using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "cargo-booking-consistency-review",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Cargo booking consistency review"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/cargo-booking-consistency-review",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "receiving-director-handoff-draft",
+    "title": "Receiving director handoff draft",
+    "group": "International funeral repatriation coordinator",
+    "description": "Receiving director handoff draft using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "receiving-director-handoff-draft",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Receiving director handoff draft"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/receiving-director-handoff-draft",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "family-coordination-update",
+    "title": "Family coordination update",
+    "group": "International funeral repatriation coordinator",
+    "description": "Family coordination update using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "family-coordination-update",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Family coordination update"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/family-coordination-update",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "evidence-completeness-review",
+    "title": "Evidence completeness review",
+    "group": "International funeral repatriation coordinator",
+    "description": "Evidence completeness review using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "evidence-completeness-review",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Evidence completeness review"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/evidence-completeness-review",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "operations-handoff-draft",
+    "title": "Operations handoff draft",
+    "group": "International funeral repatriation coordinator",
+    "description": "Operations handoff draft using selected repatriation case records and supplied evidence.",
+    "fields": [
+      {
+        "name": "objective",
+        "label": "Objective",
+        "type": "text"
+      },
+      {
+        "name": "sourceContext",
+        "label": "Source context",
+        "type": "textarea"
+      },
+      {
+        "name": "applicableRules",
+        "label": "Applicable rules",
+        "type": "text"
+      },
+      {
+        "name": "knownDiscrepancies",
+        "label": "Known discrepancies",
+        "type": "text"
+      },
+      {
+        "name": "constraints",
+        "label": "Constraints",
+        "type": "text"
+      },
+      {
+        "name": "requestedOutput",
+        "label": "Requested output",
+        "type": "text"
+      },
+      {
+        "name": "optionalReviewerNotes",
+        "label": "Optional reviewer notes",
+        "type": "text"
+      },
+      {
+        "name": "optionalAdditionalEvidence",
+        "label": "Optional additional evidence",
+        "type": "textarea"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "ai-international-funeral-repatriation-coordinator",
+        "path": "operations-handoff-draft",
+        "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+        "kind": "definition",
+        "label": "Operations handoff draft"
+      }
+    ],
+    "owner": "ai-international-funeral-repatriation-coordinator",
+    "alternatives": [],
+    "path": "/features/operations-handoff-draft",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "plot-inventory-map",
+    "title": "Plot Inventory & Map",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize plot inventory & map and prepare the next review.",
+    "fields": [
+      {
+        "name": "section",
+        "label": "Section",
+        "type": "text"
+      },
+      {
+        "name": "row",
+        "label": "Row",
+        "type": "text"
+      },
+      {
+        "name": "plot_number",
+        "label": "Plot Number",
+        "type": "text"
+      },
+      {
+        "name": "plot_type",
+        "label": "Plot Type",
+        "type": "select",
+        "options": [
+          "single",
+          "double",
+          "family",
+          "cremation",
+          "mausoleum",
+          "columbarium"
+        ]
+      },
+      {
+        "name": "price",
+        "label": "Price ($)",
+        "type": "number"
+      },
+      {
+        "name": "size_sqft",
+        "label": "Size (sq ft)",
+        "type": "number"
+      },
+      {
+        "name": "gps_lat",
+        "label": "GPS Latitude",
+        "type": "number"
+      },
+      {
+        "name": "gps_lng",
+        "label": "GPS Longitude",
+        "type": "number"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Plot Inventory & Map",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Plot Inventory & Map"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/plot-inventory-map",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "burial-records",
+    "title": "Burial Records",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize burial records and prepare the next review.",
+    "fields": [
+      {
+        "name": "deceased_first_name",
+        "label": "First Name",
+        "type": "text"
+      },
+      {
+        "name": "deceased_last_name",
+        "label": "Last Name",
+        "type": "text"
+      },
+      {
+        "name": "date_of_birth",
+        "label": "Date of Birth",
+        "type": "date"
+      },
+      {
+        "name": "date_of_death",
+        "label": "Date of Death",
+        "type": "date"
+      },
+      {
+        "name": "date_of_burial",
+        "label": "Date of Burial",
+        "type": "date"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "cause_of_death",
+        "label": "Cause of Death",
+        "type": "text"
+      },
+      {
+        "name": "funeral_home",
+        "label": "Funeral Home",
+        "type": "text"
+      },
+      {
+        "name": "veteran",
+        "label": "Veteran",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "name": "veteran_branch",
+        "label": "Military Branch",
+        "type": "text"
+      },
+      {
+        "name": "next_of_kin",
+        "label": "Next of Kin",
+        "type": "text"
+      },
+      {
+        "name": "next_of_kin_phone",
+        "label": "Next of Kin Phone",
+        "type": "text"
+      },
+      {
+        "name": "obituary",
+        "label": "Obituary",
+        "type": "textarea"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Burial Records",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Burial Records"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/burial-records",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "deed-ownership",
+    "title": "Deed & Ownership",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize deed & ownership and prepare the next review.",
+    "fields": [
+      {
+        "name": "deed_number",
+        "label": "Deed Number",
+        "type": "text"
+      },
+      {
+        "name": "owner_first_name",
+        "label": "Owner First Name",
+        "type": "text"
+      },
+      {
+        "name": "owner_last_name",
+        "label": "Owner Last Name",
+        "type": "text"
+      },
+      {
+        "name": "owner_email",
+        "label": "Email",
+        "type": "email"
+      },
+      {
+        "name": "owner_phone",
+        "label": "Phone",
+        "type": "text"
+      },
+      {
+        "name": "owner_address",
+        "label": "Address",
+        "type": "textarea"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "purchase_date",
+        "label": "Purchase Date",
+        "type": "date"
+      },
+      {
+        "name": "purchase_price",
+        "label": "Purchase Price",
+        "type": "number"
+      },
+      {
+        "name": "deed_type",
+        "label": "Deed Type",
+        "type": "select",
+        "options": [
+          "perpetual",
+          "term",
+          "pre-need",
+          "at-need"
+        ]
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Deed & Ownership",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Deed & Ownership"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/deed-ownership",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "interment-scheduling",
+    "title": "Interment Scheduling",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize interment scheduling and prepare the next review.",
+    "fields": [
+      {
+        "name": "deceased_name",
+        "label": "Deceased Name",
+        "type": "text"
+      },
+      {
+        "name": "scheduled_date",
+        "label": "Scheduled Date",
+        "type": "date"
+      },
+      {
+        "name": "scheduled_time",
+        "label": "Scheduled Time",
+        "type": "text"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "interment_type",
+        "label": "Type",
+        "type": "select",
+        "options": [
+          "burial",
+          "cremation",
+          "entombment",
+          "inurnment"
+        ]
+      },
+      {
+        "name": "funeral_home",
+        "label": "Funeral Home",
+        "type": "text"
+      },
+      {
+        "name": "funeral_director",
+        "label": "Funeral Director",
+        "type": "text"
+      },
+      {
+        "name": "officiant",
+        "label": "Officiant",
+        "type": "text"
+      },
+      {
+        "name": "expected_attendees",
+        "label": "Expected Attendees",
+        "type": "number"
+      },
+      {
+        "name": "special_requests",
+        "label": "Special Requests",
+        "type": "textarea"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Interment Scheduling",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Interment Scheduling"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/interment-scheduling",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "pre-need-contracts",
+    "title": "Pre-Need Contracts",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize pre-need contracts and prepare the next review.",
+    "fields": [
+      {
+        "name": "contract_number",
+        "label": "Contract Number",
+        "type": "text"
+      },
+      {
+        "name": "client_first_name",
+        "label": "Client First Name",
+        "type": "text"
+      },
+      {
+        "name": "client_last_name",
+        "label": "Client Last Name",
+        "type": "text"
+      },
+      {
+        "name": "client_email",
+        "label": "Email",
+        "type": "email"
+      },
+      {
+        "name": "client_phone",
+        "label": "Phone",
+        "type": "text"
+      },
+      {
+        "name": "client_dob",
+        "label": "Date of Birth",
+        "type": "date"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "contract_date",
+        "label": "Contract Date",
+        "type": "date"
+      },
+      {
+        "name": "total_amount",
+        "label": "Total Amount",
+        "type": "number"
+      },
+      {
+        "name": "amount_paid",
+        "label": "Amount Paid",
+        "type": "number"
+      },
+      {
+        "name": "payment_plan",
+        "label": "Payment Plan",
+        "type": "select",
+        "options": [
+          "full",
+          "monthly",
+          "quarterly",
+          "annual"
+        ]
+      },
+      {
+        "name": "services_included",
+        "label": "Services Included",
+        "type": "textarea"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Pre-Need Contracts",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Pre-Need Contracts"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/pre-need-contracts",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "monument-marker-orders",
+    "title": "Monument & Marker Orders",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize monument & marker orders and prepare the next review.",
+    "fields": [
+      {
+        "name": "order_number",
+        "label": "Order Number",
+        "type": "text"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "deceased_name",
+        "label": "Deceased Name",
+        "type": "text"
+      },
+      {
+        "name": "marker_type",
+        "label": "Marker Type",
+        "type": "select",
+        "options": [
+          "headstone",
+          "flat_marker",
+          "monument",
+          "bench",
+          "plaque",
+          "veteran_marker"
+        ]
+      },
+      {
+        "name": "material",
+        "label": "Material",
+        "type": "text"
+      },
+      {
+        "name": "inscription",
+        "label": "Inscription",
+        "type": "textarea"
+      },
+      {
+        "name": "vendor",
+        "label": "Vendor",
+        "type": "text"
+      },
+      {
+        "name": "order_date",
+        "label": "Order Date",
+        "type": "date"
+      },
+      {
+        "name": "expected_delivery",
+        "label": "Expected Delivery",
+        "type": "date"
+      },
+      {
+        "name": "installation_date",
+        "label": "Installation Date",
+        "type": "date"
+      },
+      {
+        "name": "cost",
+        "label": "Cost ($)",
+        "type": "number"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Monument & Marker Orders",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Monument & Marker Orders"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/monument-marker-orders",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "perpetual-care-fund",
+    "title": "Perpetual Care Fund",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize perpetual care fund and prepare the next review.",
+    "fields": [
+      {
+        "name": "fund_name",
+        "label": "Fund Name",
+        "type": "text"
+      },
+      {
+        "name": "account_number",
+        "label": "Account Number",
+        "type": "text"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "contributor_name",
+        "label": "Contributor",
+        "type": "text"
+      },
+      {
+        "name": "contribution_amount",
+        "label": "Contribution Amount",
+        "type": "number"
+      },
+      {
+        "name": "contribution_date",
+        "label": "Contribution Date",
+        "type": "date"
+      },
+      {
+        "name": "current_balance",
+        "label": "Current Balance",
+        "type": "number"
+      },
+      {
+        "name": "interest_rate",
+        "label": "Interest Rate (%)",
+        "type": "number"
+      },
+      {
+        "name": "last_disbursement",
+        "label": "Last Disbursement Date",
+        "type": "date"
+      },
+      {
+        "name": "disbursement_amount",
+        "label": "Disbursement Amount",
+        "type": "number"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Perpetual Care Fund",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Perpetual Care Fund"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/perpetual-care-fund",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "grounds-maintenance",
+    "title": "Grounds Maintenance",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize grounds maintenance and prepare the next review.",
+    "fields": [
+      {
+        "name": "task_name",
+        "label": "Task Name",
+        "type": "text"
+      },
+      {
+        "name": "section",
+        "label": "Section",
+        "type": "text"
+      },
+      {
+        "name": "task_type",
+        "label": "Task Type",
+        "type": "select",
+        "options": [
+          "mowing",
+          "trimming",
+          "planting",
+          "irrigation",
+          "snow_removal",
+          "leaf_cleanup",
+          "fertilizing",
+          "pest_control",
+          "general"
+        ]
+      },
+      {
+        "name": "scheduled_date",
+        "label": "Scheduled Date",
+        "type": "date"
+      },
+      {
+        "name": "completed_date",
+        "label": "Completed Date",
+        "type": "date"
+      },
+      {
+        "name": "assigned_to",
+        "label": "Assigned To",
+        "type": "text"
+      },
+      {
+        "name": "priority",
+        "label": "Priority",
+        "type": "select",
+        "options": [
+          "low",
+          "medium",
+          "high",
+          "urgent"
+        ]
+      },
+      {
+        "name": "estimated_hours",
+        "label": "Estimated Hours",
+        "type": "number"
+      },
+      {
+        "name": "actual_hours",
+        "label": "Actual Hours",
+        "type": "number"
+      },
+      {
+        "name": "cost",
+        "label": "Cost ($)",
+        "type": "number"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Grounds Maintenance",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Grounds Maintenance"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/grounds-maintenance",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "flower-placements",
+    "title": "Flower Placements",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize flower placements and prepare the next review.",
+    "fields": [
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "deceased_name",
+        "label": "Deceased Name",
+        "type": "text"
+      },
+      {
+        "name": "placed_by",
+        "label": "Placed By",
+        "type": "text"
+      },
+      {
+        "name": "flower_type",
+        "label": "Flower Type",
+        "type": "text"
+      },
+      {
+        "name": "arrangement_type",
+        "label": "Arrangement",
+        "type": "select",
+        "options": [
+          "bouquet",
+          "wreath",
+          "spray",
+          "potted",
+          "artificial",
+          "standing"
+        ]
+      },
+      {
+        "name": "placement_date",
+        "label": "Placement Date",
+        "type": "date"
+      },
+      {
+        "name": "removal_date",
+        "label": "Removal Date",
+        "type": "date"
+      },
+      {
+        "name": "occasion",
+        "label": "Occasion",
+        "type": "text"
+      },
+      {
+        "name": "vendor",
+        "label": "Vendor",
+        "type": "text"
+      },
+      {
+        "name": "cost",
+        "label": "Cost ($)",
+        "type": "number"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Flower Placements",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Flower Placements"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/flower-placements",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "chapel-ceremony-scheduling",
+    "title": "Chapel & Ceremony Scheduling",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize chapel & ceremony scheduling and prepare the next review.",
+    "fields": [
+      {
+        "name": "event_name",
+        "label": "Event Name",
+        "type": "text"
+      },
+      {
+        "name": "event_type",
+        "label": "Event Type",
+        "type": "select",
+        "options": [
+          "funeral",
+          "memorial",
+          "celebration_of_life",
+          "graveside",
+          "committal",
+          "wake",
+          "other"
+        ]
+      },
+      {
+        "name": "venue",
+        "label": "Venue",
+        "type": "select",
+        "options": [
+          "main_chapel",
+          "small_chapel",
+          "graveside",
+          "mausoleum",
+          "garden",
+          "reception_hall"
+        ]
+      },
+      {
+        "name": "scheduled_date",
+        "label": "Date",
+        "type": "date"
+      },
+      {
+        "name": "start_time",
+        "label": "Start Time",
+        "type": "text"
+      },
+      {
+        "name": "end_time",
+        "label": "End Time",
+        "type": "text"
+      },
+      {
+        "name": "deceased_name",
+        "label": "Deceased Name",
+        "type": "text"
+      },
+      {
+        "name": "contact_name",
+        "label": "Contact Name",
+        "type": "text"
+      },
+      {
+        "name": "contact_phone",
+        "label": "Contact Phone",
+        "type": "text"
+      },
+      {
+        "name": "expected_attendees",
+        "label": "Expected Attendees",
+        "type": "number"
+      },
+      {
+        "name": "officiant",
+        "label": "Officiant",
+        "type": "text"
+      },
+      {
+        "name": "special_requirements",
+        "label": "Special Requirements",
+        "type": "textarea"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Chapel & Ceremony Scheduling",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Chapel & Ceremony Scheduling"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/chapel-ceremony-scheduling",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "vendor-management",
+    "title": "Vendor Management",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize vendor management and prepare the next review.",
+    "fields": [
+      {
+        "name": "company_name",
+        "label": "Company Name",
+        "type": "text"
+      },
+      {
+        "name": "vendor_type",
+        "label": "Vendor Type",
+        "type": "select",
+        "options": [
+          "vault",
+          "florist",
+          "monument",
+          "casket",
+          "urn",
+          "catering",
+          "landscaping",
+          "transportation",
+          "other"
+        ]
+      },
+      {
+        "name": "contact_name",
+        "label": "Contact Name",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "text"
+      },
+      {
+        "name": "address",
+        "label": "Address",
+        "type": "textarea"
+      },
+      {
+        "name": "license_number",
+        "label": "License Number",
+        "type": "text"
+      },
+      {
+        "name": "insurance_expiry",
+        "label": "Insurance Expiry",
+        "type": "date"
+      },
+      {
+        "name": "contract_start",
+        "label": "Contract Start",
+        "type": "date"
+      },
+      {
+        "name": "contract_end",
+        "label": "Contract End",
+        "type": "date"
+      },
+      {
+        "name": "rating",
+        "label": "Rating (1-5)",
+        "type": "number"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Vendor Management",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Vendor Management"
+      },
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/vendors",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Vendor Management"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/vendor-management",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "compliance-regulations",
+    "title": "Compliance & Regulations",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize compliance & regulations and prepare the next review.",
+    "fields": [
+      {
+        "name": "regulation_name",
+        "label": "Regulation Name",
+        "type": "text"
+      },
+      {
+        "name": "regulation_type",
+        "label": "Type",
+        "type": "select",
+        "options": [
+          "state",
+          "federal",
+          "local",
+          "environmental",
+          "health",
+          "osha"
+        ]
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "textarea"
+      },
+      {
+        "name": "compliance_status",
+        "label": "Status",
+        "type": "select",
+        "options": [
+          "compliant",
+          "non_compliant",
+          "pending_review",
+          "under_remediation"
+        ]
+      },
+      {
+        "name": "last_audit_date",
+        "label": "Last Audit",
+        "type": "date"
+      },
+      {
+        "name": "next_audit_date",
+        "label": "Next Audit",
+        "type": "date"
+      },
+      {
+        "name": "responsible_person",
+        "label": "Responsible Person",
+        "type": "text"
+      },
+      {
+        "name": "documentation_path",
+        "label": "Documentation Path",
+        "type": "text"
+      },
+      {
+        "name": "corrective_action",
+        "label": "Corrective Action",
+        "type": "textarea"
+      },
+      {
+        "name": "fine_amount",
+        "label": "Fine Amount ($)",
+        "type": "number"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Compliance & Regulations",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Compliance & Regulations"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/compliance-regulations",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "memorial-events",
+    "title": "Memorial Events",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize memorial events and prepare the next review.",
+    "fields": [
+      {
+        "name": "event_name",
+        "label": "Event Name",
+        "type": "text"
+      },
+      {
+        "name": "event_type",
+        "label": "Event Type",
+        "type": "select",
+        "options": [
+          "memorial_day",
+          "veterans_day",
+          "holiday",
+          "anniversary",
+          "community",
+          "fundraiser",
+          "tour",
+          "other"
+        ]
+      },
+      {
+        "name": "event_date",
+        "label": "Event Date",
+        "type": "date"
+      },
+      {
+        "name": "start_time",
+        "label": "Start Time",
+        "type": "text"
+      },
+      {
+        "name": "end_time",
+        "label": "End Time",
+        "type": "text"
+      },
+      {
+        "name": "location",
+        "label": "Location",
+        "type": "text"
+      },
+      {
+        "name": "organizer",
+        "label": "Organizer",
+        "type": "text"
+      },
+      {
+        "name": "expected_attendees",
+        "label": "Expected Attendees",
+        "type": "number"
+      },
+      {
+        "name": "budget",
+        "label": "Budget ($)",
+        "type": "number"
+      },
+      {
+        "name": "actual_cost",
+        "label": "Actual Cost ($)",
+        "type": "number"
+      },
+      {
+        "name": "description",
+        "label": "Description",
+        "type": "textarea"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Memorial Events",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Memorial Events"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/memorial-events",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "genealogy-records",
+    "title": "Genealogy Records",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize genealogy records and prepare the next review.",
+    "fields": [
+      {
+        "name": "person_name",
+        "label": "Person Name",
+        "type": "text"
+      },
+      {
+        "name": "birth_date",
+        "label": "Birth Date",
+        "type": "date"
+      },
+      {
+        "name": "death_date",
+        "label": "Death Date",
+        "type": "date"
+      },
+      {
+        "name": "birth_place",
+        "label": "Birth Place",
+        "type": "text"
+      },
+      {
+        "name": "death_place",
+        "label": "Death Place",
+        "type": "text"
+      },
+      {
+        "name": "father_name",
+        "label": "Father Name",
+        "type": "text"
+      },
+      {
+        "name": "mother_name",
+        "label": "Mother Name",
+        "type": "text"
+      },
+      {
+        "name": "spouse_name",
+        "label": "Spouse Name",
+        "type": "text"
+      },
+      {
+        "name": "children",
+        "label": "Children",
+        "type": "textarea"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "burial_record_id",
+        "label": "Burial Record ID",
+        "type": "number"
+      },
+      {
+        "name": "occupation",
+        "label": "Occupation",
+        "type": "text"
+      },
+      {
+        "name": "military_service",
+        "label": "Military Service",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Genealogy Records",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Genealogy Records"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/genealogy-records",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "payment-plans",
+    "title": "Payment Plans",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize payment plans and prepare the next review.",
+    "fields": [
+      {
+        "name": "plan_number",
+        "label": "Plan Number",
+        "type": "text"
+      },
+      {
+        "name": "client_name",
+        "label": "Client Name",
+        "type": "text"
+      },
+      {
+        "name": "client_email",
+        "label": "Email",
+        "type": "email"
+      },
+      {
+        "name": "client_phone",
+        "label": "Phone",
+        "type": "text"
+      },
+      {
+        "name": "deed_id",
+        "label": "Deed ID",
+        "type": "number"
+      },
+      {
+        "name": "total_amount",
+        "label": "Total Amount",
+        "type": "number"
+      },
+      {
+        "name": "down_payment",
+        "label": "Down Payment",
+        "type": "number"
+      },
+      {
+        "name": "monthly_payment",
+        "label": "Monthly Payment",
+        "type": "number"
+      },
+      {
+        "name": "total_paid",
+        "label": "Total Paid",
+        "type": "number"
+      },
+      {
+        "name": "remaining_balance",
+        "label": "Remaining Balance",
+        "type": "number"
+      },
+      {
+        "name": "start_date",
+        "label": "Start Date",
+        "type": "date"
+      },
+      {
+        "name": "end_date",
+        "label": "End Date",
+        "type": "date"
+      },
+      {
+        "name": "payment_frequency",
+        "label": "Frequency",
+        "type": "select",
+        "options": [
+          "weekly",
+          "bi_weekly",
+          "monthly",
+          "quarterly"
+        ]
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Payment Plans",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Payment Plans"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/payment-plans",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "cremation-columbarium",
+    "title": "Cremation & Columbarium",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize cremation & columbarium and prepare the next review.",
+    "fields": [
+      {
+        "name": "niche_number",
+        "label": "Niche Number",
+        "type": "text"
+      },
+      {
+        "name": "columbarium_name",
+        "label": "Columbarium",
+        "type": "text"
+      },
+      {
+        "name": "level",
+        "label": "Level",
+        "type": "text"
+      },
+      {
+        "name": "position",
+        "label": "Position",
+        "type": "text"
+      },
+      {
+        "name": "size",
+        "label": "Size",
+        "type": "select",
+        "options": [
+          "single",
+          "double",
+          "family"
+        ]
+      },
+      {
+        "name": "occupant_name",
+        "label": "Occupant Name",
+        "type": "text"
+      },
+      {
+        "name": "date_of_inurnment",
+        "label": "Date of Inurnment",
+        "type": "date"
+      },
+      {
+        "name": "urn_type",
+        "label": "Urn Type",
+        "type": "text"
+      },
+      {
+        "name": "price",
+        "label": "Price ($)",
+        "type": "number"
+      },
+      {
+        "name": "owner_name",
+        "label": "Owner Name",
+        "type": "text"
+      },
+      {
+        "name": "owner_phone",
+        "label": "Owner Phone",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Cremation & Columbarium",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Cremation & Columbarium"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/cremation-columbarium",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "veteran-section-management",
+    "title": "Veteran Section Management",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize veteran section management and prepare the next review.",
+    "fields": [
+      {
+        "name": "veteran_name",
+        "label": "Veteran Name",
+        "type": "text"
+      },
+      {
+        "name": "service_number",
+        "label": "Service Number",
+        "type": "text"
+      },
+      {
+        "name": "branch",
+        "label": "Branch",
+        "type": "select",
+        "options": [
+          "army",
+          "navy",
+          "air_force",
+          "marines",
+          "coast_guard",
+          "space_force",
+          "national_guard"
+        ]
+      },
+      {
+        "name": "rank",
+        "label": "Rank",
+        "type": "text"
+      },
+      {
+        "name": "war_conflict",
+        "label": "War/Conflict",
+        "type": "text"
+      },
+      {
+        "name": "enlistment_date",
+        "label": "Enlistment Date",
+        "type": "date"
+      },
+      {
+        "name": "discharge_date",
+        "label": "Discharge Date",
+        "type": "date"
+      },
+      {
+        "name": "discharge_type",
+        "label": "Discharge Type",
+        "type": "text"
+      },
+      {
+        "name": "date_of_birth",
+        "label": "Date of Birth",
+        "type": "date"
+      },
+      {
+        "name": "date_of_death",
+        "label": "Date of Death",
+        "type": "date"
+      },
+      {
+        "name": "plot_id",
+        "label": "Plot ID",
+        "type": "number"
+      },
+      {
+        "name": "va_claim_number",
+        "label": "VA Claim Number",
+        "type": "text"
+      },
+      {
+        "name": "headstone_type",
+        "label": "Headstone Type",
+        "type": "text"
+      },
+      {
+        "name": "flag_holder",
+        "label": "Flag Holder",
+        "type": "select",
+        "options": [
+          "true",
+          "false"
+        ]
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Veteran Section Management",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Veteran Section Management"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/veteran-section-management",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "deed-transfers",
+    "title": "Deed Transfers",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize deed transfers and prepare the next review.",
+    "fields": [
+      {
+        "name": "deed_id",
+        "label": "Deed ID",
+        "type": "number"
+      },
+      {
+        "name": "transfer_number",
+        "label": "Transfer Number",
+        "type": "text"
+      },
+      {
+        "name": "from_owner",
+        "label": "From Owner",
+        "type": "text"
+      },
+      {
+        "name": "to_owner",
+        "label": "To Owner",
+        "type": "text"
+      },
+      {
+        "name": "to_owner_email",
+        "label": "New Owner Email",
+        "type": "email"
+      },
+      {
+        "name": "to_owner_phone",
+        "label": "New Owner Phone",
+        "type": "text"
+      },
+      {
+        "name": "transfer_date",
+        "label": "Transfer Date",
+        "type": "date"
+      },
+      {
+        "name": "transfer_type",
+        "label": "Transfer Type",
+        "type": "select",
+        "options": [
+          "sale",
+          "inheritance",
+          "gift",
+          "court_order"
+        ]
+      },
+      {
+        "name": "transfer_fee",
+        "label": "Transfer Fee ($)",
+        "type": "number"
+      },
+      {
+        "name": "legal_document",
+        "label": "Legal Document",
+        "type": "text"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "Deed Transfers",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+        "kind": "definition",
+        "label": "Deed Transfers"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/deed-transfers",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "history",
+    "title": "History",
+    "group": "Cemetery memorial park manager",
+    "description": "Organize history and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AICemeteryMemorialParkManager",
+        "path": "ai-history",
+        "source": "/Volumes/external/projects/AICemeteryMemorialParkManager",
+        "kind": "route",
+        "label": "History"
+      }
+    ],
+    "owner": "AICemeteryMemorialParkManager",
+    "alternatives": [],
+    "path": "/features/history",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "services",
+    "title": "Service Planning",
+    "group": "Funeral home operations manager",
+    "description": "Organize service planning and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/services",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Service Planning"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/services",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "compliance",
+    "title": "Regulatory Compliance",
+    "group": "Funeral home operations manager",
+    "description": "Organize regulatory compliance and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/compliance",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/compliance",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "preneed",
+    "title": "Pre-Need Planning",
+    "group": "Funeral home operations manager",
+    "description": "Organize pre-need planning and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/preneed",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Pre-Need Planning"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/preneed",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "atneed",
+    "title": "At-Need Services",
+    "group": "Funeral home operations manager",
+    "description": "Organize at-need services and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/atneed",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "At-Need Services"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/atneed",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "grief-support",
+    "title": "Grief Support",
+    "group": "Funeral home operations manager",
+    "description": "Organize grief support and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/grief-support",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Grief Support"
+      },
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/grief-support",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Grief Support"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/grief-support",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "inventory",
+    "title": "Inventory Management",
+    "group": "Funeral home operations manager",
+    "description": "Organize inventory management and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/inventory",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Inventory Management"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/inventory",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "staff",
+    "title": "Staff Management",
+    "group": "Funeral home operations manager",
+    "description": "Organize staff management and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/staff",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Staff Management"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/staff",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "cremation",
+    "title": "Cremation Services",
+    "group": "Funeral home operations manager",
+    "description": "Organize cremation services and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/cremation",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Cremation Services"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/cremation",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "fleet",
+    "title": "Fleet Management",
+    "group": "Funeral home operations manager",
+    "description": "Organize fleet management and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/fleet",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Fleet Management"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/fleet",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "memorial-products",
+    "title": "Memorial Products",
+    "group": "Funeral home operations manager",
+    "description": "Organize memorial products and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/memorial-products",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Memorial Products"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/memorial-products",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "obituaries",
+    "title": "Obituary Management",
+    "group": "Funeral home operations manager",
+    "description": "Organize obituary management and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/obituaries",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Obituary Management"
+      },
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/obituaries",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Obituaries"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/obituaries",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "embalming",
+    "title": "Embalming Records",
+    "group": "Funeral home operations manager",
+    "description": "Organize embalming records and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/embalming",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Embalming Records"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/embalming",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "cemetery-plots",
+    "title": "Cemetery Plots",
+    "group": "Funeral home operations manager",
+    "description": "Organize cemetery plots and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/cemetery-plots",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Cemetery Plots"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/cemetery-plots",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "insurance-claims",
+    "title": "Insurance Claims",
+    "group": "Funeral home operations manager",
+    "description": "Organize insurance claims and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/insurance-claims",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Insurance Claims"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/insurance-claims",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "appointments",
+    "title": "Appointments",
+    "group": "Funeral home operations manager",
+    "description": "Organize appointments and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/appointments",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Appointments"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/appointments",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "financial-records",
+    "title": "Financial Records",
+    "group": "Funeral home operations manager",
+    "description": "Organize financial records and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/financial-records",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Financial Records"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/financial-records",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "flower-orders",
+    "title": "Flower Orders",
+    "group": "Funeral home operations manager",
+    "description": "Organize flower orders and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/flower-orders",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Flower Orders"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/flower-orders",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "facility-rooms",
+    "title": "Facility Rooms",
+    "group": "Funeral home operations manager",
+    "description": "Organize facility rooms and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/facility-rooms",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Facility Rooms"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/facility-rooms",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "aftercare",
+    "title": "Aftercare Program",
+    "group": "Funeral home operations manager",
+    "description": "Organize aftercare program and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralHomeOperationsManager",
+        "path": "/aftercare",
+        "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+        "kind": "definition",
+        "label": "Aftercare Program"
+      }
+    ],
+    "owner": "AIFuneralHomeOperationsManager",
+    "alternatives": [],
+    "path": "/features/aftercare",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "eulogies",
+    "title": "Eulogies",
+    "group": "Funeral memorial creator",
+    "description": "Create heartfelt eulogies that capture the essence of your loved one",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/eulogies",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Eulogies"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/eulogies",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "memorial-pages",
+    "title": "Memorial Pages",
+    "group": "Funeral memorial creator",
+    "description": "Build beautiful digital memorial pages to celebrate a life",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/memorial-pages",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Memorial Pages"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/memorial-pages",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "estate-items",
+    "title": "Estate Coordination",
+    "group": "Funeral memorial creator",
+    "description": "Organize and track estate matters with AI-generated checklists",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/estate-items",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Estate Coordination"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/estate-items",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "funeral-programs",
+    "title": "Funeral Programs",
+    "group": "Funeral memorial creator",
+    "description": "Design complete funeral service programs with order of service",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/funeral-programs",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Funeral Programs"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/funeral-programs",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "thank-you-cards",
+    "title": "Thank You Cards",
+    "group": "Funeral memorial creator",
+    "description": "Generate sincere thank you notes for those who showed support",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/thank-you-cards",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Thank You Cards"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/thank-you-cards",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "condolence-letters",
+    "title": "Condolence Letters",
+    "group": "Funeral memorial creator",
+    "description": "Write meaningful condolence letters that offer genuine comfort",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/condolence-letters",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Condolence Letters"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/condolence-letters",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "prayers-readings",
+    "title": "Prayers & Readings",
+    "group": "Funeral memorial creator",
+    "description": "Find appropriate prayers and readings from various traditions",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/prayers-readings",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Prayers & Readings"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/prayers-readings",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "memorial-donations",
+    "title": "Memorial Donations",
+    "group": "Funeral memorial creator",
+    "description": "Track and acknowledge memorial donations and contributions",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/memorial-donations",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Memorial Donations"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/memorial-donations",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "photo-gallery",
+    "title": "Photo Gallery",
+    "group": "Funeral memorial creator",
+    "description": "Upload and organize photos to celebrate cherished memories",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/photo-gallery",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Photo Gallery"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/photo-gallery",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "guest-book",
+    "title": "Guest Book",
+    "group": "Funeral memorial creator",
+    "description": "Collect heartfelt messages from friends and family visitors",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/guest-book",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Guest Book"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/guest-book",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "service-checklists",
+    "title": "Service Checklists",
+    "group": "Funeral memorial creator",
+    "description": "Stay organized with comprehensive funeral planning checklists",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/service-checklists",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Service Checklists"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/service-checklists",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "timeline-events",
+    "title": "Memorial Timeline",
+    "group": "Funeral memorial creator",
+    "description": "Create a beautiful chronological timeline of life events",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/timeline-events",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Memorial Timeline"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/timeline-events",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "budget-tracker",
+    "title": "Budget Tracker",
+    "group": "Funeral memorial creator",
+    "description": "Track funeral expenses, estimates, and vendor payments",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/budget-tracker",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Budget Tracker"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/budget-tracker",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "venues",
+    "title": "Venue Management",
+    "group": "Funeral memorial creator",
+    "description": "Coordinate funeral homes, churches, cemeteries, and reception halls",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/venues",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Venue Management"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/venues",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "music-playlist",
+    "title": "Music Playlist",
+    "group": "Funeral memorial creator",
+    "description": "Curate the perfect musical selections for the memorial service",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/music-playlist",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Music Playlist"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/music-playlist",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "rsvp",
+    "title": "RSVP & Attendance",
+    "group": "Funeral memorial creator",
+    "description": "Track guest responses, attendance, and dietary requirements",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/rsvp",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "RSVP & Attendance"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/rsvp",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "document-vault",
+    "title": "Document Vault",
+    "group": "Funeral memorial creator",
+    "description": "Securely store and organize important documents and records",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/document-vault",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Document Vault"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/document-vault",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "flower-gifts",
+    "title": "Flower & Gift Tracker",
+    "group": "Funeral memorial creator",
+    "description": "Record floral arrangements and gifts received from well-wishers",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/flower-gifts",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Flower & Gift Tracker"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/flower-gifts",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "announcements",
+    "title": "Announcements",
+    "group": "Funeral memorial creator",
+    "description": "Create and distribute death notices and service announcements",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/announcements",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Announcements"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/announcements",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "travel-accommodations",
+    "title": "Travel & Accommodations",
+    "group": "Funeral memorial creator",
+    "description": "Coordinate travel and lodging for out-of-town guests",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/travel-accommodations",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Travel & Accommodations"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/travel-accommodations",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "memorial-videos",
+    "title": "Memorial Video",
+    "group": "Funeral memorial creator",
+    "description": "Plan memorial slideshows and video tributes for the service",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "/memorial-videos",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+        "kind": "definition",
+        "label": "Memorial Video"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/memorial-videos",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "multi-modal-memorial-video-generation-eu",
+    "title": "multi modal memorial video generation eu",
+    "group": "Funeral memorial creator",
+    "description": "Organize multi modal memorial video generation eu and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "cf-multi-modal-memorial-video-generation-eu",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "multi modal memorial video generation eu"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/multi-modal-memorial-video-generation-eu",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "legacy-letter-platform-with-posthumous-m",
+    "title": "legacy letter platform with posthumous m",
+    "group": "Funeral memorial creator",
+    "description": "Organize legacy letter platform with posthumous m and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "cf-legacy-letter-platform-with-posthumous-m",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "legacy letter platform with posthumous m"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/legacy-letter-platform-with-posthumous-m",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "grief-support-chatbot-with-grief-stage",
+    "title": "grief support chatbot with grief stage",
+    "group": "Funeral memorial creator",
+    "description": "Organize grief support chatbot with grief stage and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "cf-grief-support-chatbot-with-grief-stage",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "grief support chatbot with grief stage"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/grief-support-chatbot-with-grief-stage",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "family-tree-biography-auto-completion-pu",
+    "title": "family tree biography auto completion pu",
+    "group": "Funeral memorial creator",
+    "description": "Organize family tree biography auto completion pu and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "cf-family-tree-biography-auto-completion-pu",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "family tree biography auto completion pu"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/family-tree-biography-auto-completion-pu",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "probate-assistant-adding-state-specific",
+    "title": "probate assistant adding state specific",
+    "group": "Funeral memorial creator",
+    "description": "Organize probate assistant adding state specific and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "cf-probate-assistant-adding-state-specific-",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "probate assistant adding state specific"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/probate-assistant-adding-state-specific",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "legacy-giving-advisor-matching-memorial",
+    "title": "legacy giving advisor matching memorial",
+    "group": "Funeral memorial creator",
+    "description": "Organize legacy giving advisor matching memorial and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "cf-legacy-giving-advisor-matching-memorial-",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "legacy giving advisor matching memorial"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/legacy-giving-advisor-matching-memorial",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "legacy-interview-guide-endpoint-quest",
+    "title": "legacy interview guide endpoint quest",
+    "group": "Funeral memorial creator",
+    "description": "Organize legacy interview guide endpoint quest and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-legacy-interview-guide-endpoint-quest",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "legacy interview guide endpoint quest"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/legacy-interview-guide-endpoint-quest",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "timeline-narrative-synthesis-weave-li",
+    "title": "timeline narrative synthesis weave li",
+    "group": "Funeral memorial creator",
+    "description": "Organize timeline narrative synthesis weave li and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-timeline-narrative-synthesis-weave-li",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "timeline narrative synthesis weave li"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/timeline-narrative-synthesis-weave-li",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "donations-matching-causes-by-deceased",
+    "title": "donations matching causes by deceased",
+    "group": "Funeral memorial creator",
+    "description": "Organize donations matching causes by deceased and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-donations-matching-causes-by-deceased",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "donations matching causes by deceased"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/donations-matching-causes-by-deceased",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "grief-stage-classifier-exposed-to",
+    "title": "grief stage classifier exposed to",
+    "group": "Funeral memorial creator",
+    "description": "Organize grief stage classifier exposed to and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-grief-stage-classifier-exposed-to",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "grief stage classifier exposed to"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/grief-stage-classifier-exposed-to",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "webhook-receivers-for-online-tribute",
+    "title": "webhook receivers for online tribute",
+    "group": "Funeral memorial creator",
+    "description": "Prepare webhook receivers for online tribute requests and track review. Provider execution is not connected.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "integration",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-webhook-receivers-for-online-tribute",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "webhook receivers for online tribute"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/webhook-receivers-for-online-tribute",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "real-time-chat-between-family",
+    "title": "real time chat between family",
+    "group": "Funeral memorial creator",
+    "description": "Organize real time chat between family and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-real-time-chat-between-family",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "real time chat between family"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/real-time-chat-between-family",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "smsemail-send-infrastructure-notifica",
+    "title": "smsemail send infrastructure notifica",
+    "group": "Funeral memorial creator",
+    "description": "Organize smsemail send infrastructure notifica and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": true,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-smsemail-send-infrastructure-notifica",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "smsemail send infrastructure notifica"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/smsemail-send-infrastructure-notifica",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "payment-processing-for-donations-or",
+    "title": "payment processing for donations or",
+    "group": "Funeral memorial creator",
+    "description": "Prepare payment processing for donations or requests and track review. Provider execution is not connected.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "integration",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-payment-processing-for-donations-or",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "payment processing for donations or"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/payment-processing-for-donations-or",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  },
+  {
+    "id": "multi-tenant-funeral-home-onboarding",
+    "title": "multi tenant funeral home onboarding",
+    "group": "Funeral memorial creator",
+    "description": "Organize multi tenant funeral home onboarding and prepare the next review.",
+    "fields": [
+      {
+        "name": "details",
+        "label": "Details",
+        "type": "textarea"
+      },
+      {
+        "name": "source_text",
+        "label": "Source evidence",
+        "type": "textarea"
+      },
+      {
+        "name": "due_date",
+        "label": "Review date",
+        "type": "date"
+      }
+    ],
+    "ai": false,
+    "mode": "records",
+    "sources": [
+      {
+        "module": "AIFuneralMemorialCreator",
+        "path": "gap-no-multi-tenant-funeral-home-onboarding",
+        "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+        "kind": "route",
+        "label": "multi tenant funeral home onboarding"
+      }
+    ],
+    "owner": "AIFuneralMemorialCreator",
+    "alternatives": [],
+    "path": "/features/multi-tenant-funeral-home-onboarding",
+    "implementation": "Native records, linked work, exports, attachments and review drafts"
+  }
+]

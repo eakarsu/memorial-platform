@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ai-international-funeral-repatriation-coordinator",
+    "name": "International funeral repatriation coordinator",
+    "sourceProject": "ai-international-funeral-repatriation-coordinator",
+    "services": []
+  },
+  {
+    "id": "AICemeteryMemorialParkManager",
+    "name": "Cemetery memorial park manager",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "services": []
+  },
+  {
+    "id": "AIFuneralHomeOperationsManager",
+    "name": "Funeral home operations manager",
+    "sourceProject": "AIFuneralHomeOperationsManager",
+    "services": []
+  },
+  {
+    "id": "AIFuneralMemorialCreator",
+    "name": "Funeral memorial creator",
+    "sourceProject": "AIFuneralMemorialCreator",
+    "services": []
+  }
+]

@@ -1,0 +1,956 @@
+{
+  "mapped": [
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "RepatriationCase",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "repatriation-case",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "DeceasedRecord",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "deceased-record",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "ConsularDocument",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "consular-document",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "DestinationRequirement",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "destination-requirement",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "FuneralProvider",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "funeral-provider",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "PreparationRecord",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "preparation-record",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "CargoBooking",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "cargo-booking",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "RepatriationHandoff",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "repatriation-handoff",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "CaseExpense",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "case-expense",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "OperationalTask",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "operational-task",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "RuleVersion",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "rule-version",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "DocumentRequirement",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "document-requirement",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "consular-document-extraction",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "consular-document-extraction",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "destination-packet-gap-analysis",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "destination-packet-gap-analysis",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "document-translation-draft",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "document-translation-draft",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "cargo-booking-consistency-review",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "cargo-booking-consistency-review",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "receiving-director-handoff-draft",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "receiving-director-handoff-draft",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "family-coordination-update",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "family-coordination-update",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "evidence-completeness-review",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "evidence-completeness-review",
+      "kind": "definition"
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "sourceKey": "operations-handoff-draft",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "canonical": "operations-handoff-draft",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Plot Inventory & Map",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "plot-inventory-map",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Burial Records",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "burial-records",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Deed & Ownership",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "deed-ownership",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Interment Scheduling",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "interment-scheduling",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Pre-Need Contracts",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "pre-need-contracts",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Monument & Marker Orders",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "monument-marker-orders",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Perpetual Care Fund",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "perpetual-care-fund",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Grounds Maintenance",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "grounds-maintenance",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Flower Placements",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "flower-placements",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Chapel & Ceremony Scheduling",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "chapel-ceremony-scheduling",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Vendor Management",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "vendor-management",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Compliance & Regulations",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "compliance-regulations",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Memorial Events",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "memorial-events",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Genealogy Records",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "genealogy-records",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Payment Plans",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "payment-plans",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Cremation & Columbarium",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "cremation-columbarium",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Veteran Section Management",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "veteran-section-management",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "Deed Transfers",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager/client/src/pages/FeaturePage.js",
+      "canonical": "deed-transfers",
+      "kind": "definition"
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "sourceKey": "ai-history",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager",
+      "canonical": "history",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/cases",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "matters",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/services",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "services",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/compliance",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "compliance",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/preneed",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "preneed",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/atneed",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "atneed",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/grief-support",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "grief-support",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/inventory",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "inventory",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/staff",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "staff",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/documents",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "documents",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/cremation",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "cremation",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/fleet",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "fleet",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/memorial-products",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "memorial-products",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/obituaries",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "obituaries",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/embalming",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "embalming",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/cemetery-plots",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "cemetery-plots",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/insurance-claims",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "insurance-claims",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/vendors",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "vendor-management",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/appointments",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "appointments",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/financial-records",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "financial-records",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/communications",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "messages",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/flower-orders",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "flower-orders",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/facility-rooms",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "facility-rooms",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "sourceKey": "/aftercare",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "canonical": "aftercare",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/obituaries",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "obituaries",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/eulogies",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "eulogies",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/memorial-pages",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "memorial-pages",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/estate-items",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "estate-items",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/grief-support",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "grief-support",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/funeral-programs",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "funeral-programs",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/thank-you-cards",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "thank-you-cards",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/condolence-letters",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "condolence-letters",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/prayers-readings",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "prayers-readings",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/memorial-donations",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "memorial-donations",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/photo-gallery",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "photo-gallery",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/guest-book",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "guest-book",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/service-checklists",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "service-checklists",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/contacts",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "contacts",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/timeline-events",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "timeline-events",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/budget-tracker",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "budget-tracker",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/venues",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "venues",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/music-playlist",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "music-playlist",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/rsvp",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "rsvp",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/document-vault",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "document-vault",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/flower-gifts",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "flower-gifts",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/announcements",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "announcements",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/travel-accommodations",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "travel-accommodations",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "/memorial-videos",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator/client/src/pages/Dashboard.jsx",
+      "canonical": "memorial-videos",
+      "kind": "definition"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "cf-multi-modal-memorial-video-generation-eu",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "multi-modal-memorial-video-generation-eu",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "cf-legacy-letter-platform-with-posthumous-m",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "legacy-letter-platform-with-posthumous-m",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "cf-grief-support-chatbot-with-grief-stage",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "grief-support-chatbot-with-grief-stage",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "cf-family-tree-biography-auto-completion-pu",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "family-tree-biography-auto-completion-pu",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "cf-probate-assistant-adding-state-specific-",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "probate-assistant-adding-state-specific",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "cf-legacy-giving-advisor-matching-memorial-",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "legacy-giving-advisor-matching-memorial",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-legacy-interview-guide-endpoint-quest",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "legacy-interview-guide-endpoint-quest",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-timeline-narrative-synthesis-weave-li",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "timeline-narrative-synthesis-weave-li",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-donations-matching-causes-by-deceased",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "donations-matching-causes-by-deceased",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-grief-stage-classifier-exposed-to",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "grief-stage-classifier-exposed-to",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-webhook-receivers-for-online-tribute",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "webhook-receivers-for-online-tribute",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-real-time-chat-between-family",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "real-time-chat-between-family",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-smsemail-send-infrastructure-notifica",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "smsemail-send-infrastructure-notifica",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-payment-processing-for-donations-or",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "payment-processing-for-donations-or",
+      "kind": "route"
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "sourceKey": "gap-no-multi-tenant-funeral-home-onboarding",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "canonical": "multi-tenant-funeral-home-onboarding",
+      "kind": "route"
+    }
+  ],
+  "ignored": [
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "key": "/registers",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "key": "/workflow",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "key": "/delivery",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "ai-international-funeral-repatriation-coordinator",
+      "key": "/operations",
+      "source": "/Volumes/external/projects/ai-international-funeral-repatriation-coordinator/src/config/app.ts",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "key": "insights/timeline",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "key": "codex/custom-viz",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "key": "codex/operations",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "key": "login",
+      "source": "/Volumes/external/projects/AICemeteryMemorialParkManager",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "key": "/",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "key": "/feature/:featureKey",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AICemeteryMemorialParkManager",
+      "key": "/ai/:aiFeature",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralHomeOperationsManager",
+      "key": "/pricing",
+      "source": "/Volumes/external/projects/AIFuneralHomeOperationsManager/public/js/app.js",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "insights/timeline",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "codex/custom-viz",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "codex/operations",
+      "source": "/Volumes/external/projects/AIFuneralMemorialCreator",
+      "reason": "Authentication, configuration, container or utility represented by the shared workspace."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/memorial/:slug",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/obituaries/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/eulogies/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/memorial-pages/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/estate-items/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/grief-support/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/funeral-programs/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/thank-you-cards/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/condolence-letters/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/prayers-readings/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/memorial-donations/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/photo-gallery/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/guest-book/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/service-checklists/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/contacts/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/timeline-events/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/budget-tracker/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/venues/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/music-playlist/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/rsvp/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/document-vault/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/flower-gifts/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/announcements/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/travel-accommodations/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/memorial-videos/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/thank-you-tracker/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/ai-legacy-tools/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "/vendor-probate/*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    },
+    {
+      "project": "AIFuneralMemorialCreator",
+      "key": "*",
+      "reason": "Home, dynamic record action, callback or fallback route."
+    }
+  ],
+  "migrationWarnings": []
+}
