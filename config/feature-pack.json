@@ -1,0 +1,22 @@
+{
+  "insights": [
+    {
+      "id": "insight-repatriation-case",
+      "feature": "repatriation-case",
+      "title": "Repatriation case insight",
+      "focus": "Summarize Repatriation Case records: totals, status mix, field coverage and recent activity. Use only supplied records; do not invent consular or transport confirmations."
+    },
+    {
+      "id": "insight-consular-document",
+      "feature": "consular-document",
+      "title": "Consular document insight",
+      "focus": "Summarize Consular Document records: totals, status mix, field coverage and recent activity. Use only supplied records; do not invent document validity."
+    },
+    {
+      "id": "priority-actions",
+      "feature": "tasks",
+      "title": "Priority actions",
+      "focus": "Overdue and upcoming tasks and deadlines, including unassigned work."
+    }
+  ]
+}
